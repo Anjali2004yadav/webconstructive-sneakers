@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA Performance Sneakers</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#" class="logo">NOVA</a>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#product">Product</a>
+                <a href="#features">Features</a>
+                <a href="#enquiry">Enquiry</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="tagline">MOVE WITHOUT LIMITS</p>
+
+                    <h1>
+                        NOVA Performance
+                        <span>Sneakers</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Lightweight, breathable and cushioned sneakers
+                        designed for everyday comfort and active lifestyles.
+                    </p>
+
+                    <a href="#product" class="primary-btn">
+                        Explore Product
+                    </a>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <img
+                        src="assets/sneaker.png"
+                        alt="NOVA Performance Sneakers"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Product Section -->
+        <section class="product-section" id="product">
+
+            <div class="container product-grid">
+
+                <div class="product-details">
+
+                    <p class="section-label">NOVA COLLECTION</p>
+
+                    <h2>NOVA Performance Sneakers</h2>
+
+                    <p class="product-description">
+                        Built for comfort and movement, NOVA sneakers
+                        combine a lightweight design with breathable
+                        materials and responsive cushioning.
+                    </p>
+
+
+                    <!-- Product Features -->
+                    <div class="features" id="features">
+
+                        <div class="feature">
+                            <span>✓</span>
+                            <p>Lightweight Design</p>
+                        </div>
+
+                        <div class="feature">
+                            <span>✓</span>
+                            <p>Breathable Material</p>
+                        </div>
+
+                        <div class="feature">
+                            <span>✓</span>
+                            <p>Cushioned Sole</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Size Selection -->
+                    <div class="option-group">
+
+                        <label for="size">Select Size</label>
+
+                        <select id="size">
+
+                            <option value="2999">
+                                Size 7 - ₹2,999
+                            </option>
+
+                            <option value="3199">
+                                Size 8 - ₹3,199
+                            </option>
+
+                            <option value="3399">
+                                Size 9 - ₹3,399
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Quantity Selection -->
+                    <div class="option-group">
+
+                        <label>Quantity</label>
+
+                        <div class="quantity-control">
+
+                            <button id="minusBtn" type="button">
+                                −
+                            </button>
+
+                            <span id="quantity">1</span>
+
+                            <button id="plusBtn" type="button">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Dynamic Total -->
+                    <div class="price-box">
+
+                        <span>Total</span>
+
+                        <strong id="totalPrice">
+                            ₹2,999
+                        </strong>
+
+                    </div>
+
+
+                    <a href="#enquiry" class="primary-btn">
+                        Enquire Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Enquiry Form -->
+        <section class="enquiry-section" id="enquiry">
+
+            <div class="container enquiry-container">
+
+                <div class="enquiry-heading">
+
+                    <p class="section-label">GET IN TOUCH</p>
+
+                    <h2>Enquire About NOVA</h2>
+
+                    <p>
+                        Interested in the NOVA Performance Sneakers?
+                        Fill out the form and our team will get back to you.
+                    </p>
+
+                </div>
+
+
+                <form id="enquiryForm" class="enquiry-form">
+
+                    <div class="form-group">
+
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter 10-digit phone number"
+                            maxlength="10"
+                            inputmode="numeric"
+                            pattern="[0-9]{10}"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            rows="4"
+                            placeholder="Enter your enquiry"
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="primary-btn">
+                        Submit Enquiry
+                    </button>
+
+                    <p id="successMessage" class="success-message"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 NOVA Performance Sneakers.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
